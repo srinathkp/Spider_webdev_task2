@@ -91,7 +91,7 @@ document.getElementById("cityname").value=city;
 		                var json=JSON.parse(xmlhttp.responseText);
 	                                                //	alert(json['main']['temp']);
 	                       var infowindow = new google.maps.InfoWindow({
-  content:"city"+city+"<br>current temperature in this region:"+json['main']['temp']+"&deg;F<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;currently:"+json['weather'][0]['main']
+  content:"city"+city+"<br>current temperature in this region:"+json['main']['temp']-+"K<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;currently:"+json['weather'][0]['main']
 });
 infowindow.open(map,marker);
 	                       }
